@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'spring-boot'
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 // In this section you declare the dependencies for your production and test code
@@ -19,22 +19,34 @@ dependencies {
     // compile 'org.slf4j:slf4j-api:1.7.21'
     // testCompile 'junit:junit:4.12'
 
-    compile 'org.springframework:spring-web'
     compile 'org.apache.tomcat:tomcat-catalina:8.5.4'
     compile 'org.apache.tomcat:tomcat-util:8.5.4'
     compile 'org.apache.tomcat.embed:tomcat-embed-core:8.5.4'
 
-    compile 'org.jboss.resteasy:resteasy-jaxrs:3.0.8.Final'
+
+    // compile 'org.springframework.boot:spring-boot-starter-web'
+    // compile 'org.springframework.boot:spring-boot-starter-actuator'
+    // compile 'org.springframework.boot:spring-boot-legacy'
+    // compile 'org.springframework.boot:spring-boot-devtools'
+    // compile 'org.springframework.boot:spring-boot-starter-security'
+
+
     compile 'com.h2database:h2:1.4.191'
 
     compile 'org.camunda.bpm:camunda-engine:7.5.0'
     compile 'org.camunda.bpm:camunda-engine-spring:7.5.0'
     compile 'org.camunda.bpm:camunda-engine-rest:7.5.0'
+    compile 'org.jboss.resteasy:resteasy-jaxrs:3.0.8.Final'
+    compile 'org.springframework:spring-web'
 
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'org.springframework.boot:spring-boot-starter-tomcat'
+    compile 'org.camunda.bpm.extension:camunda-bpm-spring-boot-starter-rest:1.2.1'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    // compile 'org.springframework.boot:spring-boot-legacy'
+    compile 'org.springframework.boot:spring-boot-starter-tomcat'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-security'
+    compile 'org.springframework.boot:spring-boot-starter-remote-shell'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'org.springframework.boot:spring-boot-devtools'
 
 
 }
