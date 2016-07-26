@@ -40,7 +40,7 @@ dependencies {
     compile 'org.springframework:spring-web'
 
     compile 'org.camunda.bpm.extension:camunda-bpm-spring-boot-starter-rest:1.2.1'
-    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    // compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-tomcat'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-security'
